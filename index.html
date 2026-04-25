@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .editable {
+            padding: 5px;
+        }
+        .editable:focus {
+            outline: 2px solid #007BFF;
+            background: #eef6ff;
+        }
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 contenteditable="true" class="editable">Your Name</h1>
+        <p contenteditable="true" class="editable">Email | Phone | LinkedIn | Location</p>
+
+        <div class="section">
+            <h2>Summary</h2>
+            <p contenteditable="true" class="editable">
+                Brief professional summary goes here.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <p contenteditable="true" class="editable">
+                Degree, University, Year
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+            <div contenteditable="true" class="editable">
+                <p><strong>Job Title</strong> — Company (Year - Year)</p>
+                <ul>
+                    <li>Achievement or responsibility</li>
+                    <li>Achievement or responsibility</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            <div contenteditable="true" class="editable">
+                <p><strong>Project Name</strong></p>
+                <ul>
+                    <li>Description of project</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <p contenteditable="true" class="editable">
+                Python, C++, Data Analysis, Machine Learning
+            </p>
+        </div>
+    </div>
+</body>
+</html>
